@@ -10,6 +10,14 @@
 # dependencies
 /node_modules
 
+# yarn
+.yarn
+!.yarn/patches
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+
 # profiling files
 chrome-profiler-events*.json
 

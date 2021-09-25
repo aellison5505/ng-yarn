@@ -2,11 +2,11 @@
   "name": "ng-yarn",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "ng": "pnpify ng",
+    "start": "pnpify ng serve",
+    "build": "pnpify ng build",
+    "watch": "pnpify ng build --watch --configuration development",
+    "test": "pnpify ng test"
   },
   "private": true,
   "dependencies": {
@@ -18,6 +18,7 @@
     "@angular/platform-browser": "~12.2.0",
     "@angular/platform-browser-dynamic": "~12.2.0",
     "@angular/router": "~12.2.0",
+    "@yarnpkg/pnpify": "^3.0.1-rc.6",
     "rxjs": "~6.6.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
@@ -35,5 +36,37 @@
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
     "typescript": "~4.3.5"
+  },
+  "dependenciesMeta": {
+    "@angular/animations@12.2.7": {
+      "unplugged": true
+    },
+    "@angular/cli@12.2.7": {
+      "unplugged": true
+    },
+    "@angular/common@12.2.7": {
+      "unplugged": true
+    },
+    "@angular/compiler@12.2.7": {
+      "unplugged": true
+    },
+    "@angular/compiler-cli@12.2.7": {
+      "unplugged": true
+    },
+    "@angular/core@12.2.7": {
+      "unplugged": true
+    },
+    "@angular/forms@12.2.7": {
+      "unplugged": true
+    },
+    "@angular/platform-browser@12.2.7": {
+      "unplugged": true
+    },
+    "@angular/platform-browser-dynamic@12.2.7": {
+      "unplugged": true
+    },
+    "@angular/router@12.2.7": {
+      "unplugged": true
+    }
   }
 }
